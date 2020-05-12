@@ -11,7 +11,7 @@ const car = carMakers[0];
 const myCar = carMakers.pop();
 
 // prevent incompatible values
-carMakers.push(100);
+carMakers.push('sopheak');
 
 // help with 'map' 'reduce' 'foreach'
 carMakers.map((car: string): string => {
