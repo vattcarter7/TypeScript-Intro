@@ -1,12 +1,6 @@
 // indicate these different thinngs are not just array but with types
 // BUT tuples are not frequently used, but use object with key=value instead
 
-const drink = {
-  color: 'brown',
-  carbonated: true,
-  sugar: 40
-};
-
 // Type alias
 type Drink = [string, boolean, number];
 
