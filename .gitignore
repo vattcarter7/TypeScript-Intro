@@ -1,4 +1,4 @@
 /node-modules
 .vscode
-/dist
+/maps/dist
 /.cache
