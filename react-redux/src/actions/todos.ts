@@ -9,12 +9,12 @@ export interface Todo {
 }
 
 export interface FetchTodosAction {
-  type: ActionTypes.fetchTodos;
+  type: ActionTypes.FETCH_TODOS;
   payload: Todo[];
 }
 
 export interface DeleteTodoAction {
-  type: ActionTypes.deleteTodo;
+  type: ActionTypes.DELETE_TODO;
   payload: number;
 }
 
@@ -25,7 +25,7 @@ export const fetchTodos = () => {
     const response = await axios.get<Todo[]>(url);
 
     dispatch<FetchTodosAction>({
-      type: ActionTypes.fetchTodos,
+      type: ActionTypes.FETCH_TODOS,
       payload: response.data
     });
   };
@@ -33,7 +33,7 @@ export const fetchTodos = () => {
 
 export const deleteTodo = (id: number): DeleteTodoAction => {
   return {
-    type: ActionTypes.deleteTodo,
+    type: ActionTypes.DELETE_TODO,
     payload: id
   };
 };
