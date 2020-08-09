@@ -35,6 +35,7 @@ class _App extends Component<AppProps, AppState> {
     this.props.deleteTodo(id);
   }
 
+  // Returns an array JSX Element 
   renderList(): JSX.Element[] {
     return this.props.todos.map((todo: Todo) => {
       return (
